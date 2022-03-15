@@ -1,9 +1,11 @@
 #include "main.h"
-/* this prints _putchar followed by a new line 
- *main function is empty
+/**
+ * main-description
+ * this prints _putchar followed by a new line
+ * Return: 0. 
  */
 int main(void)
 {
-_putchar("'%s'", "_putchar\n");
+_putchar("%s\n", _putchar);
 		return (0);
 }

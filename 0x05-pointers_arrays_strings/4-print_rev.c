@@ -6,12 +6,12 @@
 
 void print_rev(char *s)
 {
-	int w = 0, men;
+	int wo = 0, men;
 
 	while (s[men++])
 		w++;
 
-	for (men = w -1; men >= 0; men--)
+	for (men = wo - 1; men >= 0; men--)
 		_putchar(s[men]);
 
 	_putchar('\n');

@@ -4,7 +4,7 @@
  * @s: char type pointer
  */
 
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	int c;
 

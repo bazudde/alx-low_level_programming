@@ -9,7 +9,7 @@ void print_rev(char *s)
 	int wo = 0, men;
 
 	while (s[men++])
-		w++;
+		wo++;
 
 	for (men = wo - 1; men >= 0; men--)
 		_putchar(s[men]);

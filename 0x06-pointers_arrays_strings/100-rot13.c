@@ -1,32 +1,28 @@
-#inclde "main.h"
-#include <stdio.h>
-
+#include "main.h"
 /**
-  * rot13 - ...
-  * @s: ...
-  *
-  * Return: ...
-  */
-char *rot13(char *s)
+ * rot13 - Encodes a string into rot13
+ * @a: String
+ *
+ * Return: String as a pointer
+ */
+char *rot13(char *a)
 {
-	int a = 0;
+	int j;
+	int i = 0;
+	char initial[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char final[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (s[a])
+	while (*(a + i))
 	{
-		while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
+		for (j = 0; j <= 52; j++)
 		{
-			if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
+			if (*(a + i) == initial[j])
 			{
-				s[a] -= 13;
+				*(a + i) = final[j];
 				break;
 			}
-
-			s[a] += 13;
-			break;
 		}
-
-		a++;
+	i++;
 	}
-
-	return (s);
+	return (a);
 }

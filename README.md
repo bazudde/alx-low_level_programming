@@ -1,1 +1,1 @@
-This repository is for low level programming languages like C
+This is about functions and nested loops

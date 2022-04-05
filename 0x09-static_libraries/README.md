@@ -1,1 +1,1 @@
-a directory on static libraries
+directory on static libraries

@@ -1,1 +1,1 @@
-Directory having more about malloc and free
+more use of malloc and free
